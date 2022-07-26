@@ -1,9 +1,5 @@
 <h2>  <b>Linguagens De Programacao I 2022.2</b> </h2>
 
-<!-- [![GitHub issues](https://img.shields.io/github/issues/maumneto/lip1-20212)](https://github.com/maumneto/lip1-20222/issues)
-[![GitHub forks](https://img.shields.io/github/forks/maumneto/lip1-20212)](https://github.com/maumneto/lip1-20222/network)
-[![GitHub stars](https://img.shields.io/github/stars/maumneto/lip1-20212)](https://github.com/maumneto/lip1-20222/stargazers) -->
-
 Este repositório tem o objetivo de auxiliar os alunos de Linguagens de Programação I da Unichristus do semestre 2022-2. 
 Este repositório contém os códigos dos exercícios resolvidos em sala de aula.
 
