@@ -26,7 +26,7 @@ public class Question3 {
             if (media < 4.0) {
                 System.out.println("Reprovado! Fica ai mesmo...");
             } else {
-                System.out.println("Está na FINAL. Vamo ver...");
+                System.out.println("Está na FINAL. Vamo ver... ");
             }
         }
        
