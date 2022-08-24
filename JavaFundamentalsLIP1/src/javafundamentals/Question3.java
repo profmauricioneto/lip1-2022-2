@@ -27,8 +27,18 @@ public class Question3 {
                 System.out.println("Reprovado! Fica ai mesmo...");
             } else {
                 System.out.println("Está na FINAL. Vamo ver... ");
+                float npFinal, mediaFinal;
+                System.out.print("Entre com a nota final: ");
+                npFinal = input.nextFloat();
+                mediaFinal = (media + npFinal)/2;
+                System.out.println("\nA media final é: " + mediaFinal);
+                if (mediaFinal >= 5.0) {
+                    System.out.println("Aprovado! Por pouco...");
+                } else {
+                    System.out.println("Reprovado na Final.");
+                }
             }
         }
-       
+        input.close();
     }
 }
