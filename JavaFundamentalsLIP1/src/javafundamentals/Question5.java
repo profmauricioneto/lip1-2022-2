@@ -13,6 +13,15 @@ public class Question5 {
         int somaQuad = 0, quadSoma = 0, index = 1;
         while(index <= 10) {
             somaQuad = somaQuad + index*index;
+            quadSoma = quadSoma + index;
+            index++;
         }
+        quadSoma = quadSoma*quadSoma;
+//        quadSoma = (int) Math.pow((int)quadSoma, (int)2);
+        int diff;
+        diff = quadSoma - somaQuad;
+        System.out.println("O quadrado da soma: " + quadSoma);
+        System.out.println("A soma do quadrado: " + somaQuad);
+        System.out.println("A diferença é: " + diff);
     }
 }
