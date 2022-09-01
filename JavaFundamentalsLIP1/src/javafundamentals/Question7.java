@@ -12,15 +12,21 @@ import java.util.Scanner;
  */
 public class Question7 {
     public static void main(String[] args) {
+        // criar variável de contagem de pares
+        int contPair = 0;
         int valores[] = new int[10];
         Scanner scan = new Scanner(System.in);
         for(int i = 0; i < valores.length; i++) {
-            System.out.print("Digite o numero: ");
+            System.out.printf("Digite o valor de v[%d]: ", i);
             valores[i] = scan.nextInt();
-            System.out.println("");
+            // criar estrutura de decisão para captar pares
+            if (valores[i] % 2 == 0) {
+                contPair++;
+            }
         }
-        for(int i = 0; i < valores.length; i++) {
-            System.out.println("Saida: " + valores[i]);
-        }
+        System.out.println("A quantidade de pares nesse vetor é: " + contPair);
+//        for(int i = 0; i < valores.length; i++) {
+//            System.out.println("Saida: " + valores[i]);
+//        }
     }
 }
