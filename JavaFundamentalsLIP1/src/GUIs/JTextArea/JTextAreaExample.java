@@ -54,9 +54,15 @@ public class JTextAreaExample extends JFrame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            String textOutput = tOutput.getText();
             String textInput = tInput.getText();
-            tOutput.setText(textInput);
+            if(textOutput.equals("")) {
+                tOutput.setText(textInput);
+            } else {
+                tOutput.setText(textOutput + "\n" + textInput);
+            }
             tInput.setText("");
+
         }
         
     }

@@ -47,7 +47,7 @@ public class JPasswordExample extends JFrame {
         lLogin.setBounds(20, 20, 50, 30);
         tLogin.setBounds(70, 20, 200, 30);
         lPass.setBounds(20, 60, 100, 30);
-        tPass.setBounds(110, 60, 150, 30);
+        tPass.setBounds(120, 60, 150, 30);
         enter.setBounds(120, 100, 60, 30);
 
         VerifyLogin verify = new VerifyLogin();
@@ -75,7 +75,8 @@ public class JPasswordExample extends JFrame {
                 result.setForeground(Color.RED);
                 result.setText("Login and Password are wrong");
             }
-            
+            tLogin.setText("");
+            tPass.setText("");
             frame.setSize(300, 200);
             frame.setVisible(true);
             }

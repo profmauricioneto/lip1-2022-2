@@ -23,7 +23,7 @@ public class JComboBoxExample extends JFrame {
     JTextField tName, tAge;
     JButton okButton;
     JComboBox bCountries;
-    String countries[] = {"Brazil", "Mexico", "Chile", "Portugal"};
+    String countries[] = {"","Brazil", "Mexico", "Chile", "Portugal"};
     public JComboBoxExample() {
         super("ComboBox Example");
         Container cont = getContentPane();
