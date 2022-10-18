@@ -31,10 +31,10 @@ public class BorderLayoutsExample extends JFrame {
         Container cont = getContentPane();
         setLayout(new BorderLayout());
         
-        cont.add(bNorth, BorderLayout.NORTH);
+        cont.add(bNorth, BorderLayout.CENTER);
         cont.add(bSouth, BorderLayout.SOUTH);
         cont.add(bEast, BorderLayout.EAST);
-        cont.add(bWest, BorderLayout.WEST);
+        cont.add(bWest, BorderLayout.CENTER);
         cont.add(bCenter, BorderLayout.CENTER);
         
         ClosePane close = new ClosePane();

@@ -25,7 +25,7 @@ public class FlowLayoutExample extends JFrame {
     public FlowLayoutExample() {
         super("flow layout");
         
-        text1 = new JTextField("            ");
+        text1 = new JTextField(10);
         label1 = new JLabel("Nome");
         bNorth = new JButton("Button North");
         bSouth = new JButton("Button South");

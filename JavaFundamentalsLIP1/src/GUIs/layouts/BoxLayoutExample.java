@@ -37,7 +37,7 @@ public class BoxLayoutExample extends JFrame {
         horizon.add(bWest);
         
         cont.add(horizon, BorderLayout.CENTER);
-        setLayout(new BoxLayout(cont, BoxLayout.PAGE_AXIS));
+        setLayout(new BoxLayout(cont, BoxLayout.X_AXIS));
         
         setSize(400,400);
         setVisible(true);
