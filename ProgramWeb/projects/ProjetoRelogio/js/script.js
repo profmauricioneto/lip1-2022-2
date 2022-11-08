@@ -1,4 +1,3 @@
-// let is12hour = true;
 function clockTime12hour() {
     // creating the clock variables
     let date = new Date();
@@ -19,14 +18,19 @@ function clockTime12hour() {
     hour = (hour < 10) ? "0" + hour : hour;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
-    // 
+    // creating the string of time
     var currentTime = hour + ":" + minutes + ":" + seconds;
-    // 
+    // change the the text of the html elements
     document.getElementById("clock").innerText = currentTime;
     document.getElementById("period").innerText = period;
     let time = setTimeout(function(){
         clockTime12hour()
     }, 1000);
+
+    var twentyButton = document.getElementById('twentyHour');
+    twentyButton.addEventListener('click', function() {
+        clearInterval(time);
+    });
 }
 
 function clockTime24hour() {
@@ -44,14 +48,19 @@ function clockTime24hour() {
     hour = (hour < 10) ? "0" + hour : hour;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
-    // 
+    // creating the string of time
     var currentTime = hour + ":" + minutes + ":" + seconds;
-    // 
+    // change the the text of the html elements 
     document.getElementById("clock").innerText = currentTime;
     document.getElementById("period").innerText = period;
     let time = setTimeout(function(){
-        clockTime12hour()
+        clockTime24hour()
     }, 1000);
+
+    var twelveButton = document.getElementById('twelve');
+    twelveButton.addEventListener('click', function() {
+        clearInterval(time);
+    });
 }
 // calling right function
 document.getElementById("twelve").onclick = function() {
