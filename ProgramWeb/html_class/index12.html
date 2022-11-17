@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h2>My First Form</h2>
+    <form>
+        <div id="personal_data">
+            <label for="fname">Name:</label>
+            <input type="text" placeholder="firstname" name="fname" required/>
+            <br/>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" placeholder="lastname" required/>
+            <br/>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="ex: 25" name="age" min="0" max="120" value="0"/>
+        </div>
+        <div id="nation">
+            <input type="radio" value="BRASIL" id="br" name="nations" checked>
+            <label for="br">Brasil</label>
+            <input type="radio" name="nations" value="ARGENTINA">
+            <label for="ag">Argentina</label>
+            <input type="radio" name="nations" value="CHILE">
+            <label for="ch">Chile</label>
+        </div>
+        <input type="submit"/>
+    </form>
+</body>
+</html>
