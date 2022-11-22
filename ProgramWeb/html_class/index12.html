@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
 </head>
-<body>
+<body onload="showRadioValues()">
     <h2>My First Form</h2>
-    <form>
+    <form action="/result" method="post">
         <div id="personal_data">
             <label for="fname">Name:</label>
-            <input type="text" placeholder="firstname" name="fname" required/>
+            <input type="text" placeholder="firstname" id="fname" name="fname" required/>
             <br/>
             <label for="lname">Last Name:</label>
-            <input type="text" name="lname" placeholder="lastname" required/>
+            <input type="text" name="lname" id="lname" placeholder="lastname" required/>
             <br/>
             <label for="age">Age:</label>
-            <input type="number" placeholder="ex: 25" name="age" min="0" max="120" value="0"/>
+            <input type="number" placeholder="ex: 25" name="age" id="age" min="0" max="120" value="0"/>
         </div>
         <div id="nation">
             <input type="radio" value="BRASIL" id="br" name="nations" checked>
@@ -27,7 +25,42 @@
             <input type="radio" name="nations" value="CHILE">
             <label for="ch">Chile</label>
         </div>
-        <input type="submit"/>
+        <div id="languages">
+            <input type="checkbox" name="language" value="JAVASCRIPT">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="language" value="JAVA">
+            <label for="java">Java</label>
+            <input type="checkbox" name="language" value="CARBON">
+            <label for="carbon">Carbon</label>
+        </div>
+        <div id="future_languages">
+            <h3>Qual linguagem querem aprender?</h3>
+            <select name="future_language">
+                <option value="PYTHON">Python</option>
+                <option value="TYPESCRIPT">TypeScript</option>
+                <option value="PHP">PHP</option>
+                <option value="RUBY">Ruby</option>
+                <option value="JULIA" selected>Julia</option>
+            </select>
+        </div>
+        <button type="submit" onclick="sendDataForm()">Enviar</button>
     </form>
+    <script>
+        function showRadioValues() {
+            var elements = document.getElementsByName("nations");
+            for (var i = 0; i < elements.length; i++) {
+                console.log(elements[i].value);
+            }
+        }
+
+        function sendDataForm() {
+            let data = {
+                firstname: document.getElementById("fname").value,
+                lastname: document.getElementById("lname").value,
+                age: document.getElementById("age").value     
+            }
+            console.log(data);
+        }
+    </script>
 </body>
 </html>
