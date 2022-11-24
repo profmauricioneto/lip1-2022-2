@@ -43,8 +43,26 @@
                 <option value="JULIA" selected>Julia</option>
             </select>
         </div>
-        <button type="submit" onclick="sendDataForm()">Enviar</button>
+        <div id="message">
+            <h3>Message</h3>
+            <textarea rows="10" cols="30" placeholder="write something..."></textarea>
+        </div>
+        <div id="datalist">
+            <h3>Navegadores</h3>
+            <input type="text" list="navigator">
+            <datalist id="navigator">
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Edge"></option>
+                <option value="Safari"></option>
+            </datalist>
+        </div>
+        <input type="submit" value="submit">
+        <!-- <button type="submit" onclick="sendDataForm()">Enviar</button> -->
     </form>
+    <button onclick="window.alert('Meu primeiro handler!')">
+        Abrir popup
+    </button>
     <script>
         function showRadioValues() {
             var elements = document.getElementsByName("nations");
