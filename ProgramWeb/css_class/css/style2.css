@@ -1,0 +1,10 @@
+header {
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+}
+
+div ~ p {
+    border: 1px solid red;
+    color: blue;
+}

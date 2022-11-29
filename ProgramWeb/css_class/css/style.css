@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: blue;
+    border: 2px solid black;
+    font-size: large;
+}
+
+#main-content {
+    border: 1px solid blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    text-align: center;
+    background-color: beige;
+    font-weight: bold;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: gray;
+    font-size: 20px;
+}
+
+a:active {
+    color: blue;
+}
+
+div.card:hover {
+    background-color: beige;
+}
+
+p::first-line {
+    color: #ff0000;
+    background-color: lightblue;
+    word-spacing: 0.1em;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+::selection {
+    background-color: yellow;
+}
+
+::marker {
+    font-size: 40px;
+    color: blue;
+}
+/* div:first-child {
+    border: 3px solid red;
+} */
+
+div[title] {
+    background-color: blueviolet;
+}
