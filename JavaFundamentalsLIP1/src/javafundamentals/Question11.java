@@ -54,5 +54,6 @@ public class Question11 {
         System.out.println("Digite a quantidade de termos: ");
         index = scan.nextInt();
         fibonacci2(index);
+        scan.close();
     }
 }

@@ -20,5 +20,6 @@ public class Question6 {
             serieHarm = serieHarm + (float)1/i;
         }
         System.out.println("Serie Harmonica: " + serieHarm);
+        scan.close();
     }
 }

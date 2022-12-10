@@ -27,5 +27,6 @@ public class QuestionReview2 {
             }
             System.out.println("Fatorial é: " + fat);
         }
+        scan.close();
     }
 }

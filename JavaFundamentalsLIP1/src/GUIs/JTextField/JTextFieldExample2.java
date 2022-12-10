@@ -10,9 +10,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.event.*;
-import javax.swing.JOptionPane;
-import java.util.List;
-import java.util.Set;
 /**
  *
  * @author maumneto

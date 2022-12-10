@@ -12,7 +12,7 @@ public class OutputExample {
     public static void main(String[] args) {
         final double pi = 3.1415;
         int age = 25;
-        int x = 10, y = 12;   
+//        int x = 10, y = 12;   
 //        for(i = 0; i < 10; ++i) {
 //            res = i * 2;
 //            System.out.println(res);

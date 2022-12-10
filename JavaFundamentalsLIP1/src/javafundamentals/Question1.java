@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Question1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        final double PI = 3.1415;
+        // final double PI = 3.1415;
         float radiano, graus;
         /* entrada de dados */
         System.out.print("Digite o valor em graus: ");

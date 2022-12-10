@@ -31,5 +31,6 @@ public class Example0 {
         } else {
             System.out.print("Nenhum opção foi selecionada!\n");
         }
+        input.close();
     }
 }

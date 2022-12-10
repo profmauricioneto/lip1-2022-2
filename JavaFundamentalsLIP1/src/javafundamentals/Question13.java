@@ -18,7 +18,8 @@ public class Question13 {
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String phrase, newPhrase;
+        String phrase = null; 
+        String newPhrase = null;
         System.out.print("Write something: ");
         phrase = scan.nextLine();
         try {

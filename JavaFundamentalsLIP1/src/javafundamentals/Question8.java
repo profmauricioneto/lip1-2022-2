@@ -26,5 +26,6 @@ public class Question8 {
             }
         }
         System.out.println("O somatório da diagonal principal é: " + sumMainDiag);
+        scan.close();
     }
 }

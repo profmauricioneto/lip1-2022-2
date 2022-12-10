@@ -8,7 +8,6 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -24,6 +23,7 @@ public class JComboBoxExample extends JFrame {
     JButton okButton;
     JComboBox bCountries;
     String countries[] = {"","Brazil", "Mexico", "Chile", "Portugal"};
+
     public JComboBoxExample() {
         super("ComboBox Example");
         Container cont = getContentPane();

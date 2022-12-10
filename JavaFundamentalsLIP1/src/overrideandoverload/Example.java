@@ -10,11 +10,11 @@ package overrideandoverload;
  * @author maumneto
  */
 public class Example {
-    public static double sum (double a, double b) {
+    public double sum (double a, double b) {
         return a + b;
     }
     
-    public static double sum (double ...args) {
+    public double sum (double ...args) {
         double total = 0;
         for (double arg: args) {
             total += arg;

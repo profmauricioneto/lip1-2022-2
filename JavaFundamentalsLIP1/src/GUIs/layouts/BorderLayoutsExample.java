@@ -7,7 +7,6 @@ package GUIs.layouts;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.util.EventListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -36,9 +35,7 @@ public class BorderLayoutsExample extends JFrame {
         cont.add(bEast, BorderLayout.EAST);
         cont.add(bWest, BorderLayout.CENTER);
         cont.add(bCenter, BorderLayout.CENTER);
-        
-        ClosePane close = new ClosePane();
-        
+                
         setSize(400, 400);
         setVisible(true);
     }

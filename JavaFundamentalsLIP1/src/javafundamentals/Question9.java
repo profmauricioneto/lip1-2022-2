@@ -17,5 +17,6 @@ public class Question9 {
         name = scan.next();
         TestFunctioon test = new TestFunctioon();
         test.greeting(name);
+        scan.close();
     }
 }

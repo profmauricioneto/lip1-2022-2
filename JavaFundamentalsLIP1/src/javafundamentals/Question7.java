@@ -25,6 +25,7 @@ public class Question7 {
             }
         }
         System.out.println("A quantidade de pares nesse vetor é: " + contPair);
+        scan.close();
 //        for(int i = 0; i < valores.length; i++) {
 //            System.out.println("Saida: " + valores[i]);
 //        }

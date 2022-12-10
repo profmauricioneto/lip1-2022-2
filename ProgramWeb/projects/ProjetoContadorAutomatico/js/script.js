@@ -22,7 +22,7 @@ function changeNumberColor(numberCounter) {
 // function when click in reset button 
 reset.addEventListener("click", function () {
     clearInterval(temp);
-    number.innerHTML = 0;
+    number.innerHTML = number.textContent;
     var n = number.textContent;
     number.style.color = changeNumberColor(n);
 });

@@ -54,7 +54,6 @@ public class Question10 {
         idealWeight = calcIdeaWeight(gender, height);
         System.out.println("Idea Weight: " + idealWeight);
         
-        
-        
+        scan.close();
     }
 }
